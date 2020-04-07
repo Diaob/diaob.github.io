@@ -13,8 +13,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
-<meta name="description" content="Hello World"/><link rel="alternate" href="/default" title="虾饺笔记小站"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0" />
-<link rel="canonical" href="https://diaob.github.io/2020/04/07/hello-world/"/>
+<meta name="description" content="通过利率来分析银行之间的差异"/><meta name="keywords" content="金融, 虾饺笔记小站" /><link rel="alternate" href="/default" title="虾饺笔记小站"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0" />
+<link rel="canonical" href="https://diaob.github.io/2020/02/12/analyze-banks-through-interest-rate/"/>
 
 <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.0" />
@@ -37,7 +37,7 @@
   window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":"","latex":false};
 </script>
 
-    <title>Hello World - 虾饺笔记小站</title>
+    <title>通过利率来分析银行之间的差异 - 虾饺笔记小站</title>
   <meta name="generator" content="Hexo 4.2.0"></head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -90,33 +90,18 @@
         <div class="content-wrapper">
           <div id="content" class="content"><article class="post">
     <header class="post-header">
-      <h1 class="post-title">Hello World
+      <h1 class="post-title">通过利率来分析银行之间的差异
         </h1>
 
       <div class="post-meta">
         <span class="post-time">
-          2020-04-07
+          2020-02-12
         </span></div>
     </header>
 
-    <div class="post-toc" id="post-toc">
-    <h2 class="post-toc-title">Contents</h2>
-    <div class="post-toc-content">
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
-    </div>
-  </div><div class="post-content"><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+    <div class="post-content"><p>判断大-中小银行之间的利差，可以从农商行与国有银行间同业存单利差来判断。比如存单利差从35BP下降到13BP，AA-与AAA同业存单利差从70BP下降至45BP，说明原先市场偏好各规模银行之间的流动性分层问题有所释缓。适度的同业利差可以充分反映不同类型银行的信用风险。而包商银行冲击、打破同业刚兑增加了低评级中小银行同业存单发行难度。</p>
+<p>观察R007与DR007的利差是否处于历史高位，可以观察银行与非银层面的流动性。</p>
+<p>而查看民营企业与地方国企间的信用利差，可以知道民营企业和国有企业的融资难度差异</p>
 
       </div>
       <div class="post-copyright">
@@ -126,16 +111,24 @@
     </p>
     <p class="copyright-item">
       <span>Link: </span>
-      <a href="https://diaob.github.io/2020/04/07/hello-world/">https://diaob.github.io/2020/04/07/hello-world/</a>
+      <a href="https://diaob.github.io/2020/02/12/analyze-banks-through-interest-rate/">https://diaob.github.io/2020/02/12/analyze-banks-through-interest-rate/</a>
     </p>
     <p class="copyright-item">
       <span>License: </span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
     </p>
   </div>
       <footer class="post-footer">
+        <div class="post-tags">
+            <a href="/tags/%E9%87%91%E8%9E%8D/">金融</a>
+            </div>
         
-        <nav class="post-nav"><a class="next" href="/2020/03/12/nahan-book-report/">
-        <span class="next-text nav-default">回不去的江南景</span>
+        <nav class="post-nav"><a class="prev" href="/2020/02/23/nicol-weibo-2019-book-report/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">疯狂吸收，野蛮生长，能量守恒</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    <a class="next" href="/2020/02/10/china-supply-and-demand-analyze/">
+        <span class="next-text nav-default">浅谈中国总供求分析</span>
         <span class="prev-text nav-mobile">Next</span>
         <i class="iconfont icon-right"></i>
       </a>

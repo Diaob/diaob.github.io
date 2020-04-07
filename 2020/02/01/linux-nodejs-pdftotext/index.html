@@ -13,8 +13,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
-<meta name="description" content="回不去的江南景"/><meta name="keywords" content="读后感, 虾饺笔记小站" /><link rel="alternate" href="/default" title="虾饺笔记小站"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0" />
-<link rel="canonical" href="https://diaob.github.io/2020/03/12/nahan-book-report/"/>
+<meta name="description" content="又一种PDF转TXT选择"/><meta name="keywords" content="教程, 虾饺笔记小站" /><link rel="alternate" href="/default" title="虾饺笔记小站"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0" />
+<link rel="canonical" href="https://diaob.github.io/2020/02/01/linux-nodejs-pdftotext/"/>
 
 <link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.0" />
@@ -37,7 +37,7 @@
   window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":"","latex":false};
 </script>
 
-    <title>回不去的江南景 - 虾饺笔记小站</title>
+    <title>又一种PDF转TXT选择 - 虾饺笔记小站</title>
   <meta name="generator" content="Hexo 4.2.0"></head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -90,21 +90,28 @@
         <div class="content-wrapper">
           <div id="content" class="content"><article class="post">
     <header class="post-header">
-      <h1 class="post-title">回不去的江南景
+      <h1 class="post-title">又一种PDF转TXT选择
         </h1>
 
       <div class="post-meta">
         <span class="post-time">
-          2020-03-12
+          2020-02-01
         </span></div>
     </header>
 
-    <div class="post-content"><p>高中时碰到鲁迅的文章，一般都非常喜欢。因为表达就是江浙人的风格，读起来很亲切。可是一到考试就不亲切了，“迅哥儿”短短的一句话会被无尽地解读，回答题目时往往让人大费周折，对于没有太多文学细胞的人来说，这个时候实在是喜欢不起来。</p>
-<p>现在因为疫情赋闲在家，没有什么时期读读书，翻到了鲁迅的《呐喊》，想起小时候被老师要求背鲁迅的文集：《呐喊》《彷徨》《野草》《朝花夕拾》，现在这么大了却一本也没有完整地读过，不免觉得自己有种错过了国粹的感觉。拈来一读，发现很多文章在原来的课本中已经学过。</p>
-<p>印象最深刻的还是下面这段话：</p>
-<p>两岸的豆麦和河底的水草所发散出来的清香，夹杂在水气中扑面的吹来；月色便朦胧在这水气里。浅黑的起伏的连山，仿佛是踊跃的兽脊似的，都远远的向船尾跑去。</p>
-<p>这里用了很多拟人（不知不觉还是搬来了初高中阅读分析的手法），让画面在我脑海中呈现。江南夜色中的田野，被植物的气息所填满。船两边水墨化般的画面，飞也似地向后飘去，如一滴墨水坠入一碗水中，散开，接着褪去。</p>
-<p>这是怎样一个回不去的年代，这是怎样一个叫人羡慕的年龄。历史的大车轮滚滚向前，那些小时候经历的事，都只能留在脑海里了。</p>
+    <div class="post-content"><p>很多小朋友在用Python提取PDF文字时，普遍给出的方案都是PDFMiner</p>
+<p>经过几年的迭代更新，PDFMiner也变得越来越可靠。依稀记得大一的时候PDFMiner整了半天也识别不了中文的PDF。</p>
+<p>现在研一因为需要，重新用PDFMiner，发现很方便。</p>
+<p>今天介绍另一种PDF提取文字的解决方案：利用Nodejs来实现。</p>
+<p>首先，准备命令如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install pdftk </span><br><span class="line">sudo apt-get install poppler-utils  </span><br><span class="line">sudo apt-get install ghostscript  </span><br><span class="line">sudo apt-get install tesseract-ocr  </span><br><span class="line">sudo npm install pdf-text-extract --registry https:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
+<p>然后新建一个JS文件，代码如下（来源：<a href="https://github.com/gaodechen/cninfo_process" target="_blank" rel="noopener">Gaodechen的Wind爬虫项目</a>）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var fs &#x3D; require(&#39;fs&#39;)  </span><br><span class="line">var extract &#x3D; require(&#39;pdf-text-extract&#39;)  </span><br><span class="line">var input &#x3D; process.argv.slice(2)[0]  </span><br><span class="line">var output &#x3D; process.argv.slice(2)[1] </span><br><span class="line">extract(input, function (err, pages) &#123;  </span><br><span class="line">	if (err) &#123;  </span><br><span class="line">		console.dir(err)  </span><br><span class="line">		return </span><br><span class="line">	&#125;  </span><br><span class="line">    fs.writeFile(output, pages, (error) &#x3D;&gt; &#123; </span><br><span class="line">    if (error) &#123;  </span><br><span class="line">	    console.log(error); </span><br><span class="line">	&#125; else &#123;  </span><br><span class="line">		console.log(output + &quot; DONE&quot;) </span><br><span class="line">	&#125;  </span><br><span class="line">   &#125;);  </span><br><span class="line"> &#125;)</span><br></pre></td></tr></table></figure>
+<p>另存为extract_text.js</p>
+<p>提取文字的时候运行命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node extract_text.js your_pdf your_out_txt</span><br></pre></td></tr></table></figure>
+<p>据说相比PDFMiner，运行速度更快，BUG更少。</p>
+<p>说不定真的是呢，毕竟我在捣鼓PDFMiner的时候，有个文字处理的地方一直出错，我亲自改了PDFMiner的源代码才好。</p>
 
       </div>
       <div class="post-copyright">
@@ -114,7 +121,7 @@
     </p>
     <p class="copyright-item">
       <span>Link: </span>
-      <a href="https://diaob.github.io/2020/03/12/nahan-book-report/">https://diaob.github.io/2020/03/12/nahan-book-report/</a>
+      <a href="https://diaob.github.io/2020/02/01/linux-nodejs-pdftotext/">https://diaob.github.io/2020/02/01/linux-nodejs-pdftotext/</a>
     </p>
     <p class="copyright-item">
       <span>License: </span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
@@ -122,11 +129,16 @@
   </div>
       <footer class="post-footer">
         <div class="post-tags">
-            <a href="/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/">读后感</a>
+            <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
             </div>
         
-        <nav class="post-nav"><a class="next" href="/2020/02/27/finance-support-cross-border-business/">
-        <span class="next-text nav-default">随笔：金融助力跨境零售企业</span>
+        <nav class="post-nav"><a class="prev" href="/2020/02/05/inflation-brief-talk/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">i浅谈通货膨胀的分析方法</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    <a class="next" href="/2020/02/01/one-year-in-tokyo-book-report/">
+        <span class="next-text nav-default">《东京一年》读后感</span>
         <span class="prev-text nav-mobile">Next</span>
         <i class="iconfont icon-right"></i>
       </a>

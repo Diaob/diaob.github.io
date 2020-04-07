@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="cn">
+  <head><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="description" content="i浅谈通货膨胀的分析方法"/><meta name="keywords" content="金融, 虾饺笔记小站" /><link rel="alternate" href="/default" title="虾饺笔记小站"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0" />
+<link rel="canonical" href="https://diaob.github.io/2020/02/05/inflation-brief-talk/"/>
+
+<link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.0" />
+
+<script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script>
+  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":"","latex":false};
+</script>
+
+    <title>i浅谈通货膨胀的分析方法 - 虾饺笔记小站</title>
+  <meta name="generator" content="Hexo 4.2.0"></head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">虾饺笔记小站</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list"><a href="/">
+        <li class="mobile-menu-item">Home
+          </li>
+      </a><a href="/reading/">
+        <li class="mobile-menu-item">Reading
+          </li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About
+          </li>
+      </a></ul>
+</nav>
+<div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">虾饺笔记小站</a>
+</div>
+
+<nav class="site-navbar"><ul id="menu" class="menu"><li class="menu-item">
+          <a class="menu-item-link" href="/">
+            Home
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/reading/">
+            Reading
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/about/">
+            About
+            </a>
+        </li>
+      </ul></nav>
+</header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content"><article class="post">
+    <header class="post-header">
+      <h1 class="post-title">i浅谈通货膨胀的分析方法
+        </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2020-02-05
+        </span></div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#题外话：经济分析的方法论"><span class="toc-text">题外话：经济分析的方法论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通货膨胀分析的框架"><span class="toc-text">通货膨胀分析的框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#可贸易部门的通货膨胀"><span class="toc-text">可贸易部门的通货膨胀</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#全球总供应层面的变化"><span class="toc-text">全球总供应层面的变化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#大宗商品市场的冲击"><span class="toc-text">大宗商品市场的冲击</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#美元汇率的波动"><span class="toc-text">美元汇率的波动</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#食品类通货膨胀"><span class="toc-text">食品类通货膨胀</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#总结一下"><span class="toc-text">总结一下</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#货币供应与长期通货膨胀"><span class="toc-text">货币供应与长期通货膨胀</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#菲利普斯曲线与中国通货膨胀预测"><span class="toc-text">菲利普斯曲线与中国通货膨胀预测</span></a></li></ol>
+    </div>
+  </div><div class="post-content"><p>本文是我对高善文老师《经济运行的逻辑》之“分析通货膨胀”的读后感，后续还会有“产能周期”和“资产重估”。</p>
+<h2 id="题外话：经济分析的方法论"><a href="#题外话：经济分析的方法论" class="headerlink" title="题外话：经济分析的方法论"></a>题外话：经济分析的方法论</h2><p>做宏观经济分析，在对过去几年经济数据全面把握的基础上，要重点回答三个问题：经济走向；政策立场；资金松紧</p>
+<p>数值的大小和误差倒是其次，重点是关注方向和趋势。例如政策立场偏宽松，或者相当宽松，这是重点；至于加息次数、贷款规模等，相对次要一些。</p>
+<h2 id="通货膨胀分析的框架"><a href="#通货膨胀分析的框架" class="headerlink" title="通货膨胀分析的框架"></a>通货膨胀分析的框架</h2><p>本文的宏观分析主要分为以下几部分：在我国，可贸易部门占了经济的绝大部分。所以，我们先从这一部分入手，分析可贸易部门的通货膨胀。此外，我国CPI中食品占了很大的比重，所以要对食品类通货膨胀进行分析。其次，很多人认为货币超发会引发通货膨胀。国外也有人使用菲利普斯曲线预测通货膨胀。根据以上几个问题，我简单将通货膨胀进行梳理。主要框架如下：</p>
+<ul>
+<li>可贸易部门的通货膨胀</li>
+<li>食品类通货膨胀</li>
+<li>货币供应与通货膨胀</li>
+<li>菲利普斯曲线与中国通货膨胀预测</li>
+</ul>
+<hr>
+<h2 id="可贸易部门的通货膨胀"><a href="#可贸易部门的通货膨胀" class="headerlink" title="可贸易部门的通货膨胀"></a>可贸易部门的通货膨胀</h2><p>我国的可贸易部门在中国整体的经济中，占了相当大的比重。从上中游的工业品，如原油、铁矿、钢材等，到下游的电脑、汽车等都是可贸易品。</p>
+<p>根据一价定律，在自由贸易、资本开放、无交易成本的情况下，可贸易品全球统一定价，各国之间没有价差。所以，中国的PPI（1996年以后，因为1996年中国放开经常项目的货币兑换）、美国的PPI与欧洲的PPI的波动、拐点应当有较大的一致性。而事实确实如此，中国可贸易品价格波动与全球工业品价格的波动相当一致。</p>
+<p>是哪些因素主导了PPI的波动呢？从经验数据来看：美元汇率的波动，大宗商品市场的冲击以及全球总供应层面的变化对PPI产生了重大影响。</p>
+<h4 id="全球总供应层面的变化"><a href="#全球总供应层面的变化" class="headerlink" title="全球总供应层面的变化"></a>全球总供应层面的变化</h4><p>我们使用OECD工业生产指数来衡量全球工业需求，从过去20年的情况来看，OECD工业生产指数领先美国PPI大约三个月左右。而OECD工业生产指数的波动与美国PPI基本一致，这说明全球工业需求能够影响世界工业品的价格。</p>
+<p>我们也可以使用“中国工业增加值同比”和“实际进口同比”来说明中国工业需求的波动直接影响进口需求，进而影响世界工业品的价格。</p>
+<p>综上，全球总供给层面的变化都会影响资产价格。</p>
+<h4 id="大宗商品市场的冲击"><a href="#大宗商品市场的冲击" class="headerlink" title="大宗商品市场的冲击"></a>大宗商品市场的冲击</h4><p>大宗商品市场的价格主要关注地缘政治和战争即可。因为原油等价格变化会直接影响下游产品的成本，所以突发性的黑天鹅事件对可贸易品价格具有重要的影响。</p>
+<h4 id="美元汇率的波动"><a href="#美元汇率的波动" class="headerlink" title="美元汇率的波动"></a>美元汇率的波动</h4><p>从理论上来说，本国汇率与PPI呈反向关系。因为本国汇率升值，意味着全球可贸易品价格的下降，这会压低本国生产者的价格。如果我们比较“美元指数同比变化”与“美国PPI较全球变化”，我们可以发现，在一部分时候两者呈反向关系，与理论相符。但有时候，美元汇率与PPI呈现同向关系。这是因为美国相对于其他经济体而言，出现周期性走弱，那么美元汇率贬值，美国PPI相对于其他经济体也会走弱。</p>
+<p>因为中国的汇率在一定程度上是钉住美元的，所以美元的汇率的变化会对我国通货膨胀产生影响。</p>
+<hr>
+<h2 id="食品类通货膨胀"><a href="#食品类通货膨胀" class="headerlink" title="食品类通货膨胀"></a>食品类通货膨胀</h2><p>中国的CPI的波动主要由食品价格所主导，且中国食品价格的波动与工业部门的通货膨胀高度同步（我们可以用CPI食品与第二、三产业的平减指数的相关系数来评价，但第三产业很多部门采用CPI作为价格指数，所以使用第二产业的平减指数更为恰当）。是什么引起了这个现象？</p>
+<p><strong>猜想1：食品供需影响了工业品价格</strong><br>这种说法不完全是对的。因为生产资料的价格具有全球同步性，如果因为中国食品价格的上升，引起了中国工业品价格的上升，进而造成全球的工业品价格上升？这种逻辑犯了因果倒置的错误。</p>
+<p><strong>猜想2：某些因素同时引起了食品和工业品价格的波动。</strong><br>中国的经济体系复杂，难以仅用某些因素来解释。</p>
+<p><strong>猜想3：整体经济诱发食品通胀。</strong><br>除了食品供需层面外，存在两种机制将农产品与非农产品联系起来：成本传递与通货膨胀预期。</p>
+<p>1.成本传递：化肥、农药、汽油等价格的上升，推高了农户的生活生产成本，通过成本加成的渠道影响粮食价格。<br>我们通过比较“农产品生产价格指数”与“农产品生产资料价格指数”，我们发现农产品生产资料价格上升的幅度小于农产品生产价格指数上升幅度。如果成本传递说法正确，那么农产品生产资料价格上升的幅度应该大于农产品生产价格指数。所以成本传递并不能解释整体经济对食品价格的影响。</p>
+<p>2.通货膨胀预期：农户观察到粮食、农作物价格即将上涨，产生了通货膨胀的预期。这时，农户会减少现金持有量，增加农产品持有量，如延长生猪出栏时间等。</p>
+<p>我认为，更重要的是，通货膨胀预期与库存调整假说相关。对于一些容易保存的食品，农户对库存的调整会引起农产品上价格的变动，毕竟在各种市场上，农产品市场更加接近完全竞争市场。所以，根据库存调整假说，对于新鲜蔬菜、新鲜瓜果、生鲜等易腐烂食品而言，这些食品的价格对第二产业平减指数的回归系数、相关系数要偏小；即使在通货膨胀的预期下，因为不易保存的特性，使得他们难以进行存货调整。</p>
+<p>通过将易保存食品、不易保存食品与第二产业平减指数回归并进行比较，我们会发现结果支持我们的假设。</p>
+<p><strong>为什么工业品的价格遵循一价定律，而食品价格由通货膨胀决定？</strong><br>因为在我国，农产品市场存在贸易壁垒，相对封闭，初级农产品较为标准化，需求的价格刚性较强。（这也是为什么贸易战要打开我国农产品市场的原因）</p>
+<p>那么农户又是根据什么形成通货膨胀预期的呢？接下来我们要结合<strong>刘易斯拐点</strong>来分析</p>
+<p>刘易斯拐点：刘易斯将发展中国家经济区分为现代部门和传统部门，现代部门以制造业为代表；传统部门以农业为代表。制造业以利润最大化为导向，存在持续的技术进步，资本存量是其唯一的约束，企业家利用留存收益不断扩张部门。而农业部门生产方式落后，劳动生产率低下，整个部门存在大量剩余劳动力。而这些剩余劳动力为现代部门提供源源不断的劳动力，使得劳动力供给曲线呈水平。</p>
+<p>但当农业部门的剩余劳动力被充分吸纳的时候，劳动力在农业上的边际产出开始高于其维持生计的水平，那么制造业部门的劳动供给曲线由水平变成向右上方倾斜。工资水平开始随着就业扩张而快速上涨。</p>
+<p>这一个拐点就是所谓的“刘易斯拐点”</p>
+<p>中国大约在2005年左右走过刘易斯拐点，这意味着价格层面表现出来的就是食品价格快速上升，但是工业品并没有那么大的压力。</p>
+<p>尤其是那些劳动密集型的农产品，劳动成本在食品价格中占比越大，这两年的累计涨幅也就会越大。1990-2000年的劳动力成本并没有快速上涨，所以在那几年，各种农产品的价格涨幅比例没有太大差别。相比之下，2000-2007年的劳动力成本上涨较大。所以大豆这种农作物，相比于可以机械化耕作的小麦，在价格涨幅上更加凶猛。</p>
+<p>再通过比较蔬菜价格同比差（农村 - 城市），我们可以知道，造成CPI蔬菜价格中轴上升的原因，是生产成本，而非农村到城市的流通成本。</p>
+<p>回到最初的问题，农户是根据什么形成通货膨胀预期的呢？其实，随着工业化进程的推进，农民外出打工的机会成本出现了大幅度的上升。</p>
+<p>那么机会成本又通过通货膨胀预期，传导至粮食价格大幅上涨。</p>
+<h4 id="总结一下"><a href="#总结一下" class="headerlink" title="总结一下"></a>总结一下</h4><p>由于我国农产品市场相对封闭，农户的通货膨胀预期，会进行库存调整，进而引起食品的价格上涨。农户的通货膨胀预期是根据外出打工的机会成本形成的，且易保存的食品受影响更大。</p>
+<p>近年来，CPI食品与CPI指数的价格裂口越来越大。这与日本、韩国、中国台湾等国家和地区的历史表现特别相近。在经过刘易斯拐点之后，CPI食品与CPI指数会有较大的差距。</p>
+<hr>
+<h2 id="货币供应与长期通货膨胀"><a href="#货币供应与长期通货膨胀" class="headerlink" title="货币供应与长期通货膨胀"></a>货币供应与长期通货膨胀</h2><p>曾经在很长一段时间，经常有人说出这种“虎狼之词”：央妈放水啦！又要通胀啦！价格又要飞涨啦！</p>
+<p>其实近十几年来，中国人民银行一直在强调，坚决不搞大水漫灌。其实货币政策与通货膨胀的联系正在逐渐变得松散。</p>
+<p>这种错误的观点认为受制于内外平衡以及经济转型调整，降息空间很小。该观点混淆了货币政策逆周期调节和货币超发的关系，大水漫灌的确会产生通货膨胀、资产泡沫，延缓过剩产能的出清，但在经济下行期，正常的货币政策逆周期调节能有效托底经济，为改革和转型赢得时间窗口，兼顾稳增长、调结构和促改革的多重目标。（来源：泽平宏观）</p>
+<p>我们通过收集数据，包含1990年至2009年的89个国家的通胀率和货币增速，并对其分组：通胀低于5%，通胀介于5%~20%，通胀高于20%。</p>
+<p>通过回归，我们可以证实上述表述，货币政策正在逐渐与通货膨胀脱钩：回归系数随着时间推进变小，拟合优度也在变小。</p>
+<p>这种不显著关系，通常存在以下几种解释：</p>
+<ul>
+<li>通胀度量的不完整</li>
+</ul>
+<p>中国的CPI只统计了人们的日常生活用品的价格。但并不包含住宅建筑的价格。</p>
+<ul>
+<li>货币的度量不准确</li>
+</ul>
+<p>由于金融创新，货币的外延越来越模糊</p>
+<ul>
+<li>央行的公信力取代了货币供应量，成为稳定通胀的“名义锚”</li>
+</ul>
+<p>有些国家的中央银行不具备这种公信力，他们通常采用固定汇率政策，于是固定汇率政策成为“名义锚”，而非该国的货币供应量。</p>
+<p>所以，在判断长期通货膨胀时，不能仅仅以货币增速的高低作为判断的基础</p>
+<hr>
+<h2 id="菲利普斯曲线与中国通货膨胀预测"><a href="#菲利普斯曲线与中国通货膨胀预测" class="headerlink" title="菲利普斯曲线与中国通货膨胀预测"></a>菲利普斯曲线与中国通货膨胀预测</h2><p>1.中国的可贸易部门在经济中具有非常大的比重，所以其波动对消费物价指数的影响不可忽略，所以可以视为开放的经济体。成熟经济虽然高度开放，但制造业占比很小，所以可以视为封闭的经济体。而菲利普斯曲线的假设前提就是封闭的经济体。</p>
+<p>2.主导中国消费物价指数走向的食品类价格，驱动农户通货膨胀预期的生产资料价格等不存在明显的价格粘性，其波动可以迅速反映市场供求变化的影响。<br>而在国外成熟经济体中，在用工方面存在“菜单成本”、劳动力价格存在较大的价格粘性。这也是为什么，经过新古典凯恩斯主义修正后的菲利普斯曲线在国外适用性较好的原因。</p>
+<p>3.在要素禀赋方面，我国与成熟经济体存在很大不同：我国资本存量制约是制约中国经济增长的主要因素，而成熟经济体中是劳动力短缺。中国生产资料价格变化的背后主要反映了企业生产能力的余缺和资本存量的多寡。</p>
+<p>因此，在利用失业率预测未来通货膨胀方面，成熟经济体的菲利普斯曲线对于我国可能并不适用。</p>
+<hr>
+<p>以上就是对中国通货膨胀分析框架的简单阐述。<br>码字不易，前后总共耗时3小时。<br>（本文已于2020年02月06日二次校订修正）</p>
+
+      </div>
+      <div class="post-copyright">
+    <p class="copyright-item">
+      <span>Author: </span>
+      <a href="https://diaob.github.io">ECNU虾饺</a>
+    </p>
+    <p class="copyright-item">
+      <span>Link: </span>
+      <a href="https://diaob.github.io/2020/02/05/inflation-brief-talk/">https://diaob.github.io/2020/02/05/inflation-brief-talk/</a>
+    </p>
+    <p class="copyright-item">
+      <span>License: </span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </p>
+  </div>
+      <footer class="post-footer">
+        <div class="post-tags">
+            <a href="/tags/%E9%87%91%E8%9E%8D/">金融</a>
+            </div>
+        
+        <nav class="post-nav"><a class="prev" href="/2020/02/10/china-supply-and-demand-analyze/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">浅谈中国总供求分析</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    <a class="next" href="/2020/02/01/linux-nodejs-pdftotext/">
+        <span class="next-text nav-default">又一种PDF转TXT选择</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    </nav></footer>
+    </article></div><div class="comments" id="comments"></div></div>
+      </main>
+
+      <footer id="footer" class="footer"><div class="social-links"><a href="mailto:diaob@hotmail.com" class="iconfont icon-email" title="email"></a>
+        <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    </div><div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even" target="_blank" rel="noopener">Even</a>
+  </span>
+
+  <span class="copyright-year">&copy;2020<span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">ECNU虾饺</span>
+  </span>
+</div>
+</footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div><script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/src/even.js?v=2.11.0"></script>
+</body>
+</html>

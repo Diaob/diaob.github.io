@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="cn">
+  <head><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="description" content="浅谈中国总供求分析"/><meta name="keywords" content="金融, 虾饺笔记小站" /><link rel="alternate" href="/default" title="虾饺笔记小站"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2.11.0" />
+<link rel="canonical" href="https://diaob.github.io/2020/02/10/china-supply-and-demand-analyze/"/>
+
+<link rel="stylesheet" type="text/css" href="/lib/fancybox/jquery.fancybox.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=2.11.0" />
+
+<script id="baidu_push">
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<script>
+  window.config = {"leancloud":{"app_id":null,"app_key":null},"toc":true,"fancybox":true,"pjax":"","latex":false};
+</script>
+
+    <title>浅谈中国总供求分析 - 虾饺笔记小站</title>
+  <meta name="generator" content="Hexo 4.2.0"></head>
+
+  <body><div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/." class="logo">虾饺笔记小站</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list"><a href="/">
+        <li class="mobile-menu-item">Home
+          </li>
+      </a><a href="/reading/">
+        <li class="mobile-menu-item">Reading
+          </li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About
+          </li>
+      </a></ul>
+</nav>
+<div class="container" id="mobile-panel">
+      <header id="header" class="header"><div class="logo-wrapper">
+  <a href="/." class="logo">虾饺笔记小站</a>
+</div>
+
+<nav class="site-navbar"><ul id="menu" class="menu"><li class="menu-item">
+          <a class="menu-item-link" href="/">
+            Home
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/reading/">
+            Reading
+            </a>
+        </li>
+      <li class="menu-item">
+          <a class="menu-item-link" href="/about/">
+            About
+            </a>
+        </li>
+      </ul></nav>
+</header>
+
+      <main id="main" class="main">
+        <div class="content-wrapper">
+          <div id="content" class="content"><article class="post">
+    <header class="post-header">
+      <h1 class="post-title">浅谈中国总供求分析
+        </h1>
+
+      <div class="post-meta">
+        <span class="post-time">
+          2020-02-10
+        </span></div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title">Contents</h2>
+    <div class="post-toc-content">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#分析框架简介"><span class="toc-text">分析框架简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基本假设："><span class="toc-text">基本假设：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#可贸易部门和不可贸易部门"><span class="toc-text">可贸易部门和不可贸易部门</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#曲线的移动"><span class="toc-text">曲线的移动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#冲击来源识别"><span class="toc-text">冲击来源识别</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#中国的资本约束"><span class="toc-text">中国的资本约束</span></a></li></ol>
+    </div>
+  </div><div class="post-content"><p>去年（2019年）有这么一种说法：中国总需求不足，导致中国经济增速下行。怎么判断中国总需求不足？消费吗？可以的。</p>
+<p>下文将介绍高善文老师在《经济运行的逻辑》之“观察产能周期”所介绍的，基于国际收支平衡的总供求分析框架。</p>
+<p>相比传统的Y = C + I + X 支出法分析，它克服了支出法要求总供求稳定的假设。但它也存在缺陷，对可贸易部门和不可贸易部门两者的相互作用进行了简化和省略。</p>
+<p>本文将按照以下框架进行介绍：</p>
+<ul>
+<li>分析框架简介</li>
+<li>中国的资本约束</li>
+</ul>
+<h2 id="分析框架简介"><a href="#分析框架简介" class="headerlink" title="分析框架简介"></a>分析框架简介</h2><h4 id="基本假设："><a href="#基本假设：" class="headerlink" title="基本假设："></a>基本假设：</h4><p>（1）经济体分为可贸易部门和不可贸易部门；（2）汇率大体固定；（3）经常账户开放，资本账户封闭；（4）总量波动不影响全球经济平衡格局（小国经济假设）</p>
+<p>（小国经济假设解释：大国经济假设的分析过程相当于封闭经济模型，所以在开放经济下不适用。现实往往处于两种极端之间，且不可贸易部门的分析必然是封闭经济模型）</p>
+<h4 id="可贸易部门和不可贸易部门"><a href="#可贸易部门和不可贸易部门" class="headerlink" title="可贸易部门和不可贸易部门"></a>可贸易部门和不可贸易部门</h4><p>可贸易部门和不可贸易部门的区别在于，可贸易部门的不足或过剩可以通过贸易手段来解决。分别为两者建立起总供给（AS）和总需求（AD）的模型。</p>
+<p>不可贸易部门的价格和产量，由AS和AD曲线的交点决定。可贸易部门的价格由外生决定；例如，当价格高于均衡价格时，产出大于需求，就会形成经常账户盈余（CAS）。</p>
+<p>将可贸易部门和不可贸易部门的AS曲线和AD曲线合并起来，需求曲线对应国内消费和投资，供给曲线对应总产出。</p>
+<h4 id="曲线的移动"><a href="#曲线的移动" class="headerlink" title="曲线的移动"></a>曲线的移动</h4><p>世界经济景气程度的改善、预期的改善或政府的政策刺激都会使总需求曲线向右平移；</p>
+<p>一个国家的技术进步加速、有效资本存量扩大或劳动者就业倾向改善等冲击都会使总供给曲线向右平移；</p>
+<p>如果全球需求扩张，会导致可贸易品价格上升。因为可贸易部门和不可贸易部门在现实中会相互影响，所以不可贸易部门的供给曲线会向左移动，价格上升产出下降。<br>如果贸易条件改善，我们可以理解为贸易冲击，投入品价格下降，可贸易部门和不可贸易部门的供应曲线同时向右侧移动。</p>
+<p>（在更现实的条件下，国际的需求改善会刺激投资活动，需求曲线也会向右移动）</p>
+<h4 id="冲击来源识别"><a href="#冲击来源识别" class="headerlink" title="冲击来源识别"></a>冲击来源识别</h4><p>主要关注的指标是：可贸易部门和不可贸易部门的产出和价格。</p>
+<p><strong>面对国内供求冲击时，两个部门的变化方向是一致的</strong></p>
+<p>国际需求冲击时，可以通过观察可贸易品价格变动和国际产出变化来识别和确认。</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>针对三种冲击来源（国内需求、国内供给、全球供求），我们有以下指标来识别和辨认：经常账户盈余、总产出、可贸易品价格、不可贸易品价格以及全球经济产出（用OECD工业产出指数来代表）</p>
+<h2 id="中国的资本约束"><a href="#中国的资本约束" class="headerlink" title="中国的资本约束"></a>中国的资本约束</h2><p>与发达经济体相比，推动中国这种追赶型经济体经济增长的主要因素，是资本的快速形成和积累，技术进步扮演了次要的影响，而劳动力供应对中国中长期经济增长的影响并不显著。</p>
+<p>发达国家人均资本的占有数量显著高于发展中国家，在历史上，当中国经济的扩张周期运行到接近顶点时，资本存量的约束就会鲜明地表现出来。例如，2003年中国经济处于扩张导致的严重过热阶段，此时煤电油运季度紧张，产能利用率达到顶峰，企业盈利水平处于峰值，不可贸易部门的价格压力非常强烈（因为不可贸易部门的价格往往有政府管控）</p>
+<p>如果资本存量有效扩大，那么劳动力市场就会出现就业扩大与工资加速上升并存的局面。</p>
+
+      </div>
+      <div class="post-copyright">
+    <p class="copyright-item">
+      <span>Author: </span>
+      <a href="https://diaob.github.io">ECNU虾饺</a>
+    </p>
+    <p class="copyright-item">
+      <span>Link: </span>
+      <a href="https://diaob.github.io/2020/02/10/china-supply-and-demand-analyze/">https://diaob.github.io/2020/02/10/china-supply-and-demand-analyze/</a>
+    </p>
+    <p class="copyright-item">
+      <span>License: </span><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">知识共享署名-非商业性使用 4.0 国际许可协议</a>
+    </p>
+  </div>
+      <footer class="post-footer">
+        <div class="post-tags">
+            <a href="/tags/%E9%87%91%E8%9E%8D/">金融</a>
+            </div>
+        
+        <nav class="post-nav"><a class="prev" href="/2020/02/12/analyze-banks-through-interest-rate/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">通过利率来分析银行之间的差异</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    <a class="next" href="/2020/02/05/inflation-brief-talk/">
+        <span class="next-text nav-default">i浅谈通货膨胀的分析方法</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    </nav></footer>
+    </article></div><div class="comments" id="comments"></div></div>
+      </main>
+
+      <footer id="footer" class="footer"><div class="social-links"><a href="mailto:diaob@hotmail.com" class="iconfont icon-email" title="email"></a>
+        <a href="/atom.xml" class="iconfont icon-rss" title="rss"></a>
+    </div><div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/ahonn/hexo-theme-even" target="_blank" rel="noopener">Even</a>
+  </span>
+
+  <span class="copyright-year">&copy;2020<span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">ECNU虾饺</span>
+  </span>
+</div>
+</footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div><script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/src/even.js?v=2.11.0"></script>
+</body>
+</html>
